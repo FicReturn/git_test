@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Registration form</h1>
+    <form action="process-registration" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br>
+        <label for="data-nascita">Date of birth:</label>
+        <input type="date" id="data-nascita" name="data-nascita" required><br>
+
+        <label for="telefono">Thelephone Number:</label>
+        <input type="tel" id="telephone_number" name="telephone_number" required><br>
+
+        <label for="plans">Plans:</label>
+        <select id="plans" name="plans">
+            <option value="gratuito">Free plan</option>
+            <option value="piano1">Plan 1 (15€)</option>
+            <option value="piano2">Plan 2 (30€)</option>
+            <option value="piano3">Plan 3 (50€)</option>
+        </select><br>
+
+        <label for="pro-plan">Pro Plan:</label>
+        <input type="checkbox" id="pro-plan" name="pro-plan"><br><br>
+
+        <label for="card_number">Credit card number:</label>
+        <input type="text" id="card_number" name="card_number" required><br>
+
+        <label for="cvc">CVC:</label>
+        <input type="text" id="cvc" name="cvc" required><br>
+
+        <label for="expiration_date">Expiration Date:</label>
+        <input type="month" id="expiration_date" name="expiration_date" required><br>
+
+        <label for="billing_addres">Billing Addres:</label>
+        <textarea id="billing_addres" name="billing_addres" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
